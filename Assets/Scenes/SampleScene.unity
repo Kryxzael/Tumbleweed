@@ -149,13 +149,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 229664833}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abbfb7c6dec273b459a686f15c76dfe7, type: 3}
+  m_Script: {fileID: 11500000, guid: 1159e89472e6ee343856aff191a9f47a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   leftTrigger: 0
   rightTrigger: 0
   leftStick: {x: 0, y: 0}
   rightStick: {x: 0, y: 0}
+  corePosition: {x: 0, y: 0, z: 0}
+  leftHandPosition: {x: 0, y: 0, z: 0}
+  rightHandPosition: {x: 0, y: 0, z: 0}
+  gripLeft: 0
+  gripRight: 0
 --- !u!4 &229664835
 Transform:
   m_ObjectHideFlags: 0
