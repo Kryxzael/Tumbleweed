@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421de63d6c58cb646a8f91bee9fbea00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpeedBoost: 10
+  SpeedBoost: 5
   KnockbackForce: {x: 0, y: 500, z: 2500}
   KnockbackTorque: {x: 0, y: 1000, z: 2500}
 --- !u!54 &6799952483165939039

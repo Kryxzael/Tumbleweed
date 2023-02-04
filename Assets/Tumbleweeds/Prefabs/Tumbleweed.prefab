@@ -81,7 +81,7 @@ MonoBehaviour:
   MaxSpeed: 50
   MaxHorizontalSpeed: 10
   HorizontalSpeedScale: 1
-  DecelerationScale: 0.5
+  DecelerationScale: 1
   DecelerationCurve:
     serializedVersion: 2
     m_Curve:
@@ -95,8 +95,8 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.2602536
     - serializedVersion: 3
-      time: 0.7199835
-      value: 0.96014357
+      time: 0.36164612
+      value: 0.047744274
       inSlope: 0.056688882
       outSlope: 0.056688882
       tangentMode: 0
@@ -131,7 +131,7 @@ MonoBehaviour:
   MaxJumpBounceForce: 10
   MinBounceForce: 0.25
   JumpBounceSpeedCap: 0.5
-  JumpBounceSpeedMultiplier: 1.15
+  JumpBounceSpeedMultiplier: 1.25
   MinSpeedToAllowJumpBounce: 0.05
   CoyoteTime: 0.05
 --- !u!1 &9024672993929668490
