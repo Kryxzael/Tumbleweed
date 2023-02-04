@@ -26,6 +26,7 @@ public class PlayerBounce : MonoBehaviour
 
     private Rigidbody _rigidbody;
     private PlayerSpeedController _speedController;
+    private ParticleSystem _sparkleParticles;
 
     private float _lastTimeOnGround = float.NaN;
     private float _lastTimeOfJumpButton = float.NaN;
@@ -34,6 +35,7 @@ public class PlayerBounce : MonoBehaviour
     {
         _rigidbody = GetComponent<Rigidbody>();
         _speedController = GetComponent<PlayerSpeedController>();
+        _sparkleParticles = GetComponentInChildren<ParticleSystem>();
     }
 
 
@@ -54,9 +56,9 @@ public class PlayerBounce : MonoBehaviour
             _lastTimeOfJumpButton = float.NaN;
             _lastTimeOnGround = float.NaN;
             Bounce(MaxJumpBounceForce);
-            Debug.Log("Wooosh!");
 
             _speedController.CurrentSpeed = Math.Min(_speedController.CurrentSpeed * JumpBounceSpeedMultiplier, _speedController.MaxHorizontalSpeed);
+            _sparkleParticles.Emit(5);
         }
     }
 
