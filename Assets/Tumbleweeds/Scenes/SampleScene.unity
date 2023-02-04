@@ -1046,7 +1046,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0.8679245, g: 0.6449522, b: 0.036845837, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -1079,7 +1079,7 @@ Light:
       e33: 1
     m_UseCullingMatrixOverride: 0
   m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
+  m_DrawHalo: 1
   m_Flare: {fileID: 0}
   m_RenderMode: 0
   m_CullingMask:
@@ -2164,42 +2164,6 @@ PrefabInstance:
     - target: {fileID: 9024672992534151822, guid: ef46f474082427e47adfb62d651d2f1e, type: 3}
       propertyPath: m_Name
       value: Sphere
-      objectReference: {fileID: 0}
-    - target: {fileID: 9024672992534151824, guid: ef46f474082427e47adfb62d651d2f1e, type: 3}
-      propertyPath: DecelerationCurve.m_Curve.Array.data[0].time
-      value: 0.0024528503
-      objectReference: {fileID: 0}
-    - target: {fileID: 9024672992534151824, guid: ef46f474082427e47adfb62d651d2f1e, type: 3}
-      propertyPath: DecelerationCurve.m_Curve.Array.data[1].time
-      value: 0.81228125
-      objectReference: {fileID: 0}
-    - target: {fileID: 9024672992534151824, guid: ef46f474082427e47adfb62d651d2f1e, type: 3}
-      propertyPath: DecelerationCurve.m_Curve.Array.data[1].value
-      value: 0.08282848
-      objectReference: {fileID: 0}
-    - target: {fileID: 9024672992534151824, guid: ef46f474082427e47adfb62d651d2f1e, type: 3}
-      propertyPath: DecelerationCurve.m_Curve.Array.data[0].inSlope
-      value: 0.2772602
-      objectReference: {fileID: 0}
-    - target: {fileID: 9024672992534151824, guid: ef46f474082427e47adfb62d651d2f1e, type: 3}
-      propertyPath: DecelerationCurve.m_Curve.Array.data[1].inSlope
-      value: 0.34202623
-      objectReference: {fileID: 0}
-    - target: {fileID: 9024672992534151824, guid: ef46f474082427e47adfb62d651d2f1e, type: 3}
-      propertyPath: DecelerationCurve.m_Curve.Array.data[0].outSlope
-      value: 0.2772602
-      objectReference: {fileID: 0}
-    - target: {fileID: 9024672992534151824, guid: ef46f474082427e47adfb62d651d2f1e, type: 3}
-      propertyPath: DecelerationCurve.m_Curve.Array.data[1].inWeight
-      value: 0.10823694
-      objectReference: {fileID: 0}
-    - target: {fileID: 9024672992534151824, guid: ef46f474082427e47adfb62d651d2f1e, type: 3}
-      propertyPath: DecelerationCurve.m_Curve.Array.data[1].outSlope
-      value: 0.34202623
-      objectReference: {fileID: 0}
-    - target: {fileID: 9024672992534151824, guid: ef46f474082427e47adfb62d651d2f1e, type: 3}
-      propertyPath: DecelerationCurve.m_Curve.Array.data[0].outWeight
-      value: 0.16784818
       objectReference: {fileID: 0}
     - target: {fileID: 9024672992534151826, guid: ef46f474082427e47adfb62d651d2f1e, type: 3}
       propertyPath: m_RootOrder

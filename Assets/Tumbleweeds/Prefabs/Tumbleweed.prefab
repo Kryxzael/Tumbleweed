@@ -86,22 +86,22 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
+      time: 0.0024528503
       value: 0
-      inSlope: 0.45429966
-      outSlope: 0.45429966
+      inSlope: 0.2772602
+      outSlope: 0.2772602
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
-      outWeight: 0.2602536
+      outWeight: 0.16784818
     - serializedVersion: 3
-      time: 0.36164612
-      value: 0.047744274
-      inSlope: 0.056688882
-      outSlope: 0.056688882
+      time: 0.81228125
+      value: 0.08282848
+      inSlope: 0.34202623
+      outSlope: 0.34202623
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.16721961
+      inWeight: 0.10823694
       outWeight: 0.08684167
     - serializedVersion: 3
       time: 1.0039158
