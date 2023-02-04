@@ -46,4 +46,9 @@ public class PlayerSpeedController : MonoBehaviour
 
         _rigidbody.velocity = velocity;
     }
+
+    public void Bump(float amount)
+    {
+        CurrentSpeed = Mathf.Clamp(CurrentSpeed + amount, 0, MaxSpeed);
+    }
 }

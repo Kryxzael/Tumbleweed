@@ -13,6 +13,7 @@ public class PlayerBounce : MonoBehaviour
 
     public float MaxBounceForce;
     public float MaxJumpBounceForce;
+    public float MinBounceForce;
 
     [Range(0f, 1f)]
     public float JumpBounceSpeedCap;
@@ -61,6 +62,6 @@ public class PlayerBounce : MonoBehaviour
 
     private void Bounce(float force)
     {
-        _rigidbody.velocity = _rigidbody.velocity.SetY(force * _speedController.CurrentSpeed / _speedController.MaxSpeed);
+        _rigidbody.velocity = _rigidbody.velocity.SetY(Math.Max(MinBounceForce, force * _speedController.CurrentSpeed / _speedController.MaxSpeed));
     }
 }
