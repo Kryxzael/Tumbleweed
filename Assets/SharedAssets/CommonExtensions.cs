@@ -134,13 +134,15 @@ public static class CommonExtensions
             return false;
         }
 
+        const float GROUND_EPSILON = 0.00001f;
+
         Vector3[] pnts = new[]
         {
-            new Vector3(collider.bounds.min.x, collider.bounds.min.y + 0.01f, collider.bounds.min.z),
-            new Vector3(collider.bounds.min.x, collider.bounds.min.y + 0.01f, collider.bounds.max.z),
-            new Vector3(collider.bounds.max.x, collider.bounds.min.y + 0.01f, collider.bounds.min.z),
-            new Vector3(collider.bounds.max.x, collider.bounds.min.y + 0.01f, collider.bounds.max.z),
-            new Vector3(collider.bounds.center.x, collider.bounds.min.y + 0.01f, collider.bounds.center.z)
+            new Vector3(collider.bounds.min.x, collider.bounds.min.y + GROUND_EPSILON, collider.bounds.min.z),
+            new Vector3(collider.bounds.min.x, collider.bounds.min.y + GROUND_EPSILON, collider.bounds.max.z),
+            new Vector3(collider.bounds.max.x, collider.bounds.min.y + GROUND_EPSILON, collider.bounds.min.z),
+            new Vector3(collider.bounds.max.x, collider.bounds.min.y + GROUND_EPSILON, collider.bounds.max.z),
+            new Vector3(collider.bounds.center.x, collider.bounds.min.y + GROUND_EPSILON, collider.bounds.center.z)
         };
 
 
