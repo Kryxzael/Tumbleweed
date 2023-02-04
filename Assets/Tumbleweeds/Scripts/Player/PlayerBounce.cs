@@ -23,6 +23,7 @@ public class PlayerBounce : MonoBehaviour
     public float MinSpeedToAllowJumpBounce;
 
     public float CoyoteTime;
+    public float SpamPunishTime;
 
     private Rigidbody _rigidbody;
     private PlayerSpeedController _speedController;
@@ -30,6 +31,7 @@ public class PlayerBounce : MonoBehaviour
 
     private float _lastTimeOnGround = float.NaN;
     private float _lastTimeOfJumpButton = float.NaN;
+    private float _jumpButtonCooldown = 0;
 
     private void Awake()
     {
@@ -42,7 +44,12 @@ public class PlayerBounce : MonoBehaviour
     private void Update()
     {
         if (Input.GetButtonDown(BOUNCE_BUTTON))
-            _lastTimeOfJumpButton = Time.time;
+        {
+            if (_jumpButtonCooldown <= 0)
+                _lastTimeOfJumpButton = Time.time;
+
+            _jumpButtonCooldown = SpamPunishTime;
+        }
 
         if (this.OnGround())
         {
@@ -51,15 +58,18 @@ public class PlayerBounce : MonoBehaviour
 
         }
 
-        if (_lastTimeOnGround - _lastTimeOfJumpButton < CoyoteTime && _speedController.CurrentSpeed / _speedController.MaxSpeed >= MinSpeedToAllowJumpBounce)
+        if (Math.Abs(_lastTimeOnGround - _lastTimeOfJumpButton) < CoyoteTime && _speedController.CurrentSpeed / _speedController.MaxSpeed >= MinSpeedToAllowJumpBounce)
         {
             _lastTimeOfJumpButton = float.NaN;
             _lastTimeOnGround = float.NaN;
             Bounce(MaxJumpBounceForce);
 
-            _speedController.CurrentSpeed = Math.Min(_speedController.CurrentSpeed * JumpBounceSpeedMultiplier, _speedController.MaxHorizontalSpeed);
+            _speedController.CurrentSpeed = Math.Min(_speedController.CurrentSpeed * JumpBounceSpeedMultiplier, _speedController.MaxSpeed);
             _sparkleParticles.Emit(5);
         }
+
+        if (_jumpButtonCooldown > 0)
+            _jumpButtonCooldown -= Time.deltaTime;
     }
 
     private void Bounce(float force)

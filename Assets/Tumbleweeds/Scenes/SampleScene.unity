@@ -162,6 +162,7 @@ MonoBehaviour:
   - {fileID: 4134512111704859199, guid: 803a98fdfde35dd4faf6d2b91708513b, type: 3}
   - {fileID: 4134512111704859199, guid: 8c4653a5605dcc2469145259854ba544, type: 3}
   Crashables:
+  - {fileID: 6799952483165939008, guid: 7b117b2a49f07d8479a0c72be57181ba, type: 3}
   - {fileID: 6799952483165939008, guid: e4b726c8b43ffc744821f7f71236e2c1, type: 3}
   NextSpawnPosition: 0
 --- !u!4 &129021734
@@ -415,6 +416,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sphere
       objectReference: {fileID: 0}
+    - target: {fileID: 9024672992534151824, guid: ef46f474082427e47adfb62d651d2f1e, type: 3}
+      propertyPath: CurrentSpeed
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 9024672992534151826, guid: ef46f474082427e47adfb62d651d2f1e, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -458,6 +463,14 @@ PrefabInstance:
     - target: {fileID: 9024672992534151826, guid: ef46f474082427e47adfb62d651d2f1e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9024672992534151831, guid: ef46f474082427e47adfb62d651d2f1e, type: 3}
+      propertyPath: CoyoteTime
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 9024672992534151831, guid: ef46f474082427e47adfb62d651d2f1e, type: 3}
+      propertyPath: SpamPunishTime
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef46f474082427e47adfb62d651d2f1e, type: 3}
