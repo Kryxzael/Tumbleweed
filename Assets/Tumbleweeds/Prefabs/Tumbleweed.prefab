@@ -4845,7 +4845,7 @@ GameObject:
   - component: {fileID: 9024672992534151831}
   m_Layer: 0
   m_Name: Tumbleweed
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4964,7 +4964,7 @@ MonoBehaviour:
   JumpBounceSpeedCap: 0.5
   JumpBounceSpeedMultiplier: 1.25
   MinSpeedToAllowJumpBounce: 0.05
-  CoyoteTime: 0.05
+  CoyoteTime: 0
 --- !u!1001 &470566621282151456
 PrefabInstance:
   m_ObjectHideFlags: 0
