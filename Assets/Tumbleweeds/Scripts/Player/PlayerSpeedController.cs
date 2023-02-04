@@ -35,12 +35,12 @@ public class PlayerSpeedController : MonoBehaviour
         Vector3 velocity = _rigidbody.velocity;
 
         velocity.x = Mathf.Clamp(
-            value: velocity.x += Input.GetAxis(HORIZONTAL_AXIS)  * HorizontalSpeedScale * CurrentSpeed * Time.deltaTime, 
+            value: velocity.x + Input.GetAxis(HORIZONTAL_AXIS) * HorizontalSpeedScale * CurrentSpeed * Time.deltaTime, 
             min: -MaxHorizontalSpeed, 
             max: +MaxHorizontalSpeed
         );
 
-        CurrentSpeed -= DecelerationCurve.Evaluate(Mathf.InverseLerp(0, MaxSpeed, CurrentSpeed)) * DecelerationScale;
+        CurrentSpeed -= DecelerationCurve.Evaluate(Mathf.InverseLerp(0, MaxSpeed, CurrentSpeed)) * DecelerationScale * Time.deltaTime;
 
         velocity.z = CurrentSpeed;
 

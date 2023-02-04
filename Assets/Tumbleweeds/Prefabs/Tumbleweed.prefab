@@ -81,7 +81,7 @@ MonoBehaviour:
   MaxSpeed: 50
   MaxHorizontalSpeed: 10
   HorizontalSpeedScale: 1
-  DecelerationScale: 1
+  DecelerationScale: 50
   DecelerationCurve:
     serializedVersion: 2
     m_Curve:
