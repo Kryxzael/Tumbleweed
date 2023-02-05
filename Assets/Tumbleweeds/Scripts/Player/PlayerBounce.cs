@@ -65,7 +65,7 @@ public class PlayerBounce : MonoBehaviour
             Bounce(MaxJumpBounceForce);
 
             _speedController.CurrentSpeed = Math.Min(_speedController.CurrentSpeed * JumpBounceSpeedMultiplier, _speedController.MaxSpeed);
-            _sparkleParticles.Emit(5);
+            _sparkleParticles.Emit(20);
         }
 
         if (_jumpButtonCooldown > 0)
