@@ -4908,7 +4908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd98d1e308b688c43bf9a8066b6d2134, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentSpeed: 10
+  CurrentSpeed: 25
   MaxSpeed: 50
   MaxHorizontalSpeed: 10
   HorizontalSpeedScale: 1
@@ -4964,7 +4964,8 @@ MonoBehaviour:
   JumpBounceSpeedCap: 0.5
   JumpBounceSpeedMultiplier: 1.25
   MinSpeedToAllowJumpBounce: 0.05
-  CoyoteTime: 0
+  CoyoteTime: 0.05
+  SpamPunishTime: 0.3
 --- !u!1001 &470566621282151456
 PrefabInstance:
   m_ObjectHideFlags: 0
