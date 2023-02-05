@@ -9,9 +9,9 @@ using UnityEngine;
 [RequireComponent(typeof(Collider))]
 public class Crashable : MonoBehaviour
 {
-    public float SpeedBoost;
-    public Vector3 KnockbackForce;
-    public Vector3 KnockbackTorque;
+    public float SpeedBoost = 5f;
+    private Vector3 KnockbackForce = new Vector3(0, 250, 500);
+    private Vector3 KnockbackTorque = new Vector3(0, 200, 500);
 
     private Collider _collider;
     private Rigidbody _rigidbody;
@@ -29,7 +29,10 @@ public class Crashable : MonoBehaviour
         if (player)
         {
             player.Bump(SpeedBoost);
+
+            _rigidbody.constraints = RigidbodyConstraints.None;
             _collider.enabled = false;
+
             _rigidbody.AddForce(KnockbackForce, ForceMode.Impulse);
             _rigidbody.AddTorque(KnockbackTorque);
         }

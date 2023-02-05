@@ -73,7 +73,7 @@ public class WorldGenerator : MonoBehaviour
         foreach (CrashableSpawner i in spawned.GetComponentsInChildren<CrashableSpawner>().OrderBy(i => UnityEngine.Random.value).Take(enemySpawnCount))
         {
             Crashable crashable = Crashables[UnityEngine.Random.Range(0, Crashables.Length)];
-            Instantiate(crashable, i.transform.position, Quaternion.identity, spawned.transform);
+            Instantiate(crashable, i.transform.position, Quaternion.Euler(0, 90, 0), spawned.transform);
         }
 
         //Cleanup

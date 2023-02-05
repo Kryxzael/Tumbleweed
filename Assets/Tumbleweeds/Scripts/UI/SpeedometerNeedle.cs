@@ -16,11 +16,6 @@ public class SpeedometerNeedle : MonoBehaviour
 
     private void Update()
     {
-        transform.eulerAngles = transform.eulerAngles.SetZ(
-            Mathf.Lerp(
-                transform.eulerAngles.z, 
-                Mathf.Lerp(90, -90, _player.CurrentSpeed / _player.MaxSpeed), 
-                Smoothening)
-            );
+        transform.eulerAngles = transform.eulerAngles.SetZ(Mathf.Lerp(90, -90, _player.CurrentSpeed / _player.MaxSpeed));
     }
 }
