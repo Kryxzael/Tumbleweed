@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using UnityEngine;
 
-[RequireComponent(typeof(Collider))]
+[RequireComponent(typeof(Collider), typeof(Rigidbody), typeof(AudioSource))]
 public class Crashable : MonoBehaviour
 {
     public float SpeedBoost = 5f;
@@ -15,12 +15,14 @@ public class Crashable : MonoBehaviour
 
     private Collider _collider;
     private Rigidbody _rigidbody;
+    private AudioSource _audioSource;
     private CameraKeepDistance _cam;
 
     private void Awake()
     {
         _collider = GetComponent<Collider>();    
         _rigidbody = GetComponent<Rigidbody>();
+        _audioSource = GetComponent<AudioSource>();
         _cam = Camera.main.GetComponent<CameraKeepDistance>();
     }
 
@@ -38,6 +40,9 @@ public class Crashable : MonoBehaviour
             _rigidbody.AddForce(KnockbackForce, ForceMode.VelocityChange);
             _rigidbody.AddTorque(KnockbackTorque);
             _cam.Shake(0.25f, 0.1f);
+
+            _audioSource.pitch = UnityEngine.Random.Range(0.7f, 1.3f);
+            _audioSource.Play();
         }
     }
 }

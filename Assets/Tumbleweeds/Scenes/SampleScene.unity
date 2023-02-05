@@ -1020,6 +1020,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7081462994023678688, guid: ef46f474082427e47adfb62d651d2f1e, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9024672992534151822, guid: ef46f474082427e47adfb62d651d2f1e, type: 3}
       propertyPath: m_Name
       value: Sphere
@@ -1067,6 +1071,10 @@ PrefabInstance:
     - target: {fileID: 9024672992534151826, guid: ef46f474082427e47adfb62d651d2f1e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9024672992534151831, guid: ef46f474082427e47adfb62d651d2f1e, type: 3}
+      propertyPath: MinSpeedForWhooshSound
+      value: 0.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef46f474082427e47adfb62d651d2f1e, type: 3}
