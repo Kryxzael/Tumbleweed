@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.1827423, g: 0.22580057, b: 0.29167348, a: 1}
+  m_IndirectSpecularColor: {r: 0.12806007, g: 0.1352296, b: 0.122612156, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -393,14 +393,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.3510873, y: -0.89078254, z: 0.09537676, w: 0.27230036}
+  m_LocalRotation: {x: -0.12656933, y: -0.9554001, z: 0.035843823, w: 0.2643976}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 21.169, y: -153.358, z: -37.955}
+  m_LocalEulerAnglesHint: {x: 0.089, y: -149.05, z: 15.118}
 --- !u!1 &744297256
 GameObject:
   m_ObjectHideFlags: 0
@@ -822,6 +822,7 @@ GameObject:
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
   - component: {fileID: 963194230}
+  - component: {fileID: 963194231}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -846,8 +847,8 @@ Camera:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.6509434, g: 0.47512564, b: 0.24256852, a: 0}
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.33908868, g: 0.38528234, b: 0.5660378, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -924,6 +925,15 @@ MonoBehaviour:
   MinFOV: 30
   Controller: {fileID: 173617267}
   Smoothening: 0.1
+--- !u!45 &963194231
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 65c57db0edce5944a983ed4adc906224, type: 2}
 --- !u!1001 &9024672992371045091
 PrefabInstance:
   m_ObjectHideFlags: 0
