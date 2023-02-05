@@ -8,12 +8,15 @@ public class PlayerSpeedController : MonoBehaviour
     [Header("Speed")]
     public float CurrentSpeed;
     public float MaxSpeed;
+    public float MinSpeed;
     public float MaxHorizontalSpeed;
     public float HorizontalSpeedScale;
 
     [Header("Deceleration")]
     public float DecelerationScale;
     public AnimationCurve DecelerationCurve;
+
+    public bool GameOver;
 
     /* *** */
 
@@ -32,6 +35,9 @@ public class PlayerSpeedController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameOver)
+            return;
+
         Vector3 velocity = _rigidbody.velocity;
 
         velocity.x = Mathf.Clamp(
@@ -45,6 +51,13 @@ public class PlayerSpeedController : MonoBehaviour
         velocity.z = CurrentSpeed;
 
         _rigidbody.velocity = velocity;
+
+        if (CurrentSpeed < MinSpeed)
+        {
+            GameOver = true;
+            CurrentSpeed = 0f;
+            _rigidbody.isKinematic = true;
+        }
     }
 
     public void Bump(float amount)
