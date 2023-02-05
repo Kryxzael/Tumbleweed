@@ -33,7 +33,7 @@ public class Crashable : MonoBehaviour
             _rigidbody.constraints = RigidbodyConstraints.None;
             _collider.enabled = false;
 
-            _rigidbody.AddForce(KnockbackForce, ForceMode.Impulse);
+            _rigidbody.AddForce(KnockbackForce, ForceMode.VelocityChange);
             _rigidbody.AddTorque(KnockbackTorque);
         }
     }
