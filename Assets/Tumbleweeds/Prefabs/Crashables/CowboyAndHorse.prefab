@@ -220,6 +220,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: aa9a829e48149cd4d95518bf93f5d384, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7a0a076d422c7a74bb510124c51a9903, type: 2}
+    - target: {fileID: -7511558181221131132, guid: aa9a829e48149cd4d95518bf93f5d384, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: bcbf4ed2eea66a0449fa6d7356e945f8, type: 2}
+    - target: {fileID: -7511558181221131132, guid: aa9a829e48149cd4d95518bf93f5d384, type: 3}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: b320cd96fd7611244acf0b4f1310746d, type: 2}
+    - target: {fileID: -7511558181221131132, guid: aa9a829e48149cd4d95518bf93f5d384, type: 3}
+      propertyPath: m_Materials.Array.data[5]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6bd6f9e20dcb9ce42aadd73d0070e2b6, type: 2}
     - target: {fileID: 919132149155446097, guid: aa9a829e48149cd4d95518bf93f5d384, type: 3}
       propertyPath: m_Name
       value: CowboyForwardFacing

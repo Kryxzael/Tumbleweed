@@ -65,12 +65,12 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -8137584764212978067, guid: aa9a829e48149cd4d95518bf93f5d384, type: 3}
-  - {fileID: 1568497834210624371, guid: aa9a829e48149cd4d95518bf93f5d384, type: 3}
+  - {fileID: 2100000, guid: 7a0a076d422c7a74bb510124c51a9903, type: 2}
+  - {fileID: 2100000, guid: bcbf4ed2eea66a0449fa6d7356e945f8, type: 2}
   - {fileID: 5561349426305759274, guid: aa9a829e48149cd4d95518bf93f5d384, type: 3}
   - {fileID: 3278795531428037165, guid: aa9a829e48149cd4d95518bf93f5d384, type: 3}
-  - {fileID: -4286370421276498356, guid: aa9a829e48149cd4d95518bf93f5d384, type: 3}
-  - {fileID: -6264108109303627976, guid: aa9a829e48149cd4d95518bf93f5d384, type: 3}
+  - {fileID: 2100000, guid: b320cd96fd7611244acf0b4f1310746d, type: 2}
+  - {fileID: 2100000, guid: 6bd6f9e20dcb9ce42aadd73d0070e2b6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -118,8 +118,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpeedBoost: 5
-  KnockbackForce: {x: 0, y: 500, z: 2500}
-  KnockbackTorque: {x: 0, y: 1000, z: 2500}
 --- !u!114 &5066513737711649156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,6 +132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MinSpeed: 0.75
   MaxSpeed: 3
+  WallDetectionRange: 1
   MovingRight: 0
 --- !u!54 &8188267519674478261
 Rigidbody:

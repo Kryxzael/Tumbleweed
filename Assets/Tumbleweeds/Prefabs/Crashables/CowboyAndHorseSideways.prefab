@@ -62,8 +62,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpeedBoost: 5
-  KnockbackForce: {x: 0, y: 500, z: 2500}
-  KnockbackTorque: {x: 0, y: 1000, z: 2500}
 --- !u!54 &86755449127114970
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -131,6 +129,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7b82551ba7ea8994393a9b27b65c321a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7a0a076d422c7a74bb510124c51a9903, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 7b82551ba7ea8994393a9b27b65c321a, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7d863872e2866bf44ac44ca26dce994a, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 7b82551ba7ea8994393a9b27b65c321a, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 648c42526d8f47e4baffa9124751cc38, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 7b82551ba7ea8994393a9b27b65c321a, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6bd6f9e20dcb9ce42aadd73d0070e2b6, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 7b82551ba7ea8994393a9b27b65c321a, type: 3}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: bcbf4ed2eea66a0449fa6d7356e945f8, type: 2}
     - target: {fileID: 919132149155446097, guid: 7b82551ba7ea8994393a9b27b65c321a, type: 3}
       propertyPath: m_Name
       value: CowboySidwaysFacing
@@ -193,6 +211,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4c09d5fa5cf41a64d93e2c6b75e8acc6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 648c42526d8f47e4baffa9124751cc38, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 4c09d5fa5cf41a64d93e2c6b75e8acc6, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e232460c0a97ea5479986537eade208e, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 4c09d5fa5cf41a64d93e2c6b75e8acc6, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7d863872e2866bf44ac44ca26dce994a, type: 2}
     - target: {fileID: 919132149155446097, guid: 4c09d5fa5cf41a64d93e2c6b75e8acc6, type: 3}
       propertyPath: m_Name
       value: Horse
